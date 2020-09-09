@@ -184,7 +184,7 @@
     <dependency>
       <groupId>org.yaml</groupId>
       <artifactId>snakeyaml</artifactId>
-      <version>1.14</version>
+      <version>1.26</version>
     </dependency>
     <dependency>
       <groupId>org.jruby</groupId>
@@ -241,7 +241,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -254,7 +254,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -267,7 +267,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -280,7 +280,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -293,7 +293,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -374,7 +374,7 @@
               <arguments>
                 <argument>-Djruby.bytecode.version=${base.java.version}</argument>
                 <argument>-classpath</argument>
-                <classpath />
+                <classpath/>
                 <argument>org.jruby.anno.InvokerGenerator</argument>
                 <argument>${anno.sources}/annotated_classes.txt</argument>
                 <argument>${project.build.outputDirectory}</argument>
@@ -1027,9 +1027,9 @@
                 <configuration>
                   <tasks>
                     <exec executable="/bin/sh" osfamily="unix">
-                      <arg line="-c 'cp &quot;${jruby.basedir}/bin/jruby.bash&quot; &quot;${jruby.basedir}/bin/jruby&quot;'" />
+                      <arg line="-c 'cp &quot;${jruby.basedir}/bin/jruby.bash&quot; &quot;${jruby.basedir}/bin/jruby&quot;'"/>
                     </exec>
-                    <chmod file="${jruby.basedir}/bin/jruby" perm="755" />
+                    <chmod file="${jruby.basedir}/bin/jruby" perm="755"/>
                   </tasks>
                 </configuration>
               </execution>
